@@ -16,4 +16,11 @@ Top-level folders (workspaces):
 
 Use `npm run bootstrap` to install dependencies at the root.
 
+Keep this file up to date when adding or removing experiments/apps:
+- Add a short bullet under **Recent additions** describing the new workspace and date.
+
 See each folder's README for specific setup notes.
+
+**Recent additions**
+- 2026-01-11: Added guidance files `todo.md`, `lessons_learned.md`, `note.md` (agent workflow)
+

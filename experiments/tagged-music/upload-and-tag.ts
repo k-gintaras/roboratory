@@ -202,6 +202,16 @@ class MusicUploadTagger {
             this.tagsCache.set(cacheKey, tag);
             createdTags++;
 
+            // Ensure the tag is associated to the group on the server side
+            try {
+              await this.api.post('/api/tag-group-tags', {
+                tagGroupId: group.id,
+                tagId: tag.id,
+              });
+            } catch (assocErr) {
+              // ignore association errors (already exists, etc.)
+            }
+
             // Log progress every 20 tags
             if (createdTags % 20 === 0) {
               console.log(`    • Created ${createdTags}/${uniqueValues.length} tags...`);

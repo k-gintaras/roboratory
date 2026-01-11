@@ -13,11 +13,70 @@ A TypeScript system for managing music with tags and tag groups using SQLite. In
 
 ## Installation
 
+This project is part of the **roboratory monorepo** and is designed to use shared dependencies at the workspace level (no local node_modules).
+
+### Setup
+
+From the **root directory** of the monorepo:
+
 ```bash
-# Install dependencies
-npm install
-# or
 pnpm install
+```
+
+This installs all dependencies for all workspace projects in a **single shared `node_modules`** at the root level, eliminating duplicate installations across experiments.
+
+### Running Scripts
+
+From the **tagged-music directory**:
+
+```bash
+# Run setup
+pnpm run setup
+
+# Run upload  
+pnpm run upload
+
+# Build TypeScript
+pnpm run build
+
+# Run tests
+pnpm run test
+```
+
+Or from the **root directory**, use pnpm's filter:
+
+```bash
+pnpm --filter tagged-music run setup
+pnpm --filter tagged-music run upload
+```
+
+### Why Monorepo Setup?
+
+This workspace uses **pnpm workspaces** to:
+- ✅ **Share a single `node_modules`** across all packages, apps, and experiments
+- ✅ **Avoid gigabytes of duplicate dependencies** (critical with 10+ experiments)
+- ✅ **Centralized dependency management** - update once, affects all workspaces
+- ✅ **Easy to add new experiments** - just create a folder with package.json
+- ✅ **Shared configs** - TypeScript, Jest, and other tools configured at root level
+
+### No Local node_modules
+
+Unlike the original setup, this experiment **does NOT have a local node_modules folder**. All dependencies come from the shared workspace installation at the root level. This saves massive amounts of disk space.
+
+**Expected directory structure:**
+```
+roboratory/
+├── node_modules/           ← All dependencies here (shared)
+├── experiments/
+│   ├── tagged-music/
+│   │   ├── package.json
+│   │   ├── tsconfig.json
+│   │   ├── music-tagger.ts
+│   │   └── ... (no node_modules here)
+│   └── my-other-experiment/
+│       ├── package.json
+│       └── ... (no node_modules here)
+└── ... other workspaces
 ```
 
 ## Database Schema
@@ -234,3 +293,90 @@ tagged-music/
 ## License
 
 MIT
+
+## Creating New Experiments in the Monorepo
+
+If you want to create a new experiment following this same approach, here's how:
+
+### Step 1: Create the Experiment Folder
+
+```bash
+mkdir experiments/my-new-experiment
+cd experiments/my-new-experiment
+```
+
+### Step 2: Create a `package.json`
+
+Create `experiments/my-new-experiment/package.json`:
+
+```json
+{
+  "name": "my-new-experiment",
+  "version": "1.0.0",
+  "description": "My new experiment",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
+```
+
+### Step 3: Create a `tsconfig.json`
+
+Create `experiments/my-new-experiment/tsconfig.json`:
+
+```json
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "include": ["."],
+  "exclude": ["node_modules"]
+}
+```
+
+### Step 4: Add Your Code
+
+Create your experiment files (e.g., `index.ts`).
+
+### Step 5: Install Dependencies (from root)
+
+From the **root directory** of the monorepo:
+
+```bash
+pnpm install
+```
+
+The `pnpm-workspace.yaml` at the root already includes `experiments/*`, so your new experiment will automatically be included in the workspace.
+
+### Step 6: Run Your Experiment
+
+```bash
+# From the experiment directory
+pnpm run dev
+
+# Or from the root directory with filter
+pnpm --filter my-new-experiment run dev
+```
+
+### Key Points
+
+- **Never run `npm install` or `pnpm install` inside the experiment folder**
+- **Always run `pnpm install` from the root** to update all workspace dependencies
+- **No local `node_modules` needed** — everything comes from the shared workspace installation
+- **Shared configs**: TypeScript, Jest, and other tools are configured at the root level
+- **Dependencies are deduplicated**: If two experiments need the same package, it's only installed once
+
+This approach saves disk space (no gigabytes of duplicate node_modules) and makes dependency management centralized and consistent across all experiments.

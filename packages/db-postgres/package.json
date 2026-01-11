@@ -9,8 +9,7 @@
     "test": "node -e \"console.log('no tests')\""
   },
   "dependencies": {
-    "pg": "^8.10.0",
-    "@roboratory/db-core": "workspace:packages/db-core"
+    "pg": "^8.10.0"
   },
   "devDependencies": {
     "typescript": "^5.2.2"

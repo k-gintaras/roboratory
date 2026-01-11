@@ -6,6 +6,5 @@
     "start": "node -e \"console.log('starter experiment: replace with real code')\""
   },
   "dependencies": {
-    "@roboratory/db-core": "workspace:packages/db-core"
   }
 }
