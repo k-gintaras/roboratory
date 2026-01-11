@@ -1,0 +1,26 @@
+{
+  "name": "roboratory-lab",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "bootstrap": "pnpm install --recursive",
+    "pkg:build": "pnpm -r --filter ./packages/* run build",
+    "api:dev": "pnpm --filter ./apps/api-node dev",
+    "start:api": "pnpm --filter ./apps/api-node start",
+    "test": "pnpm -r test",
+    "test:packages": "pnpm -r --filter ./packages/* test",
+    "test:apps": "pnpm -r --filter ./apps/* test",
+    "lint": "echo \"No linter configured\" && exit 0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "tsx": "^3.12.8"
+  }
+}

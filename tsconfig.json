@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "composite": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./apps/api-node" },
+    { "path": "./packages/db-core" },
+    { "path": "./packages/db-postgres" },
+    { "path": "./packages/db-sqlite" },
+    { "path": "./packages/fs-tools" }
+  ]
+}

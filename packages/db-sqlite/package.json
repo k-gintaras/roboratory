@@ -1,0 +1,18 @@
+{
+  "name": "@roboratory/db-sqlite",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "node -e \"console.log('no tests')\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.0",
+    "@roboratory/db-core": "workspace:packages/db-core"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

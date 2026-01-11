@@ -1,0 +1,19 @@
+{
+  "name": "apps-api-node",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@roboratory/fs-tools": "workspace:packages/fs-tools",
+    "@roboratory/db-postgres": "workspace:packages/db-postgres"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "tsx": "^3.12.8"
+  }
+}
