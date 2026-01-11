@@ -1,0 +1,26 @@
+{
+  "name": "tagged-music",
+  "version": "1.0.0",
+  "description": "Music tagging system with SQLite database",
+  "main": "music-tagger.ts",
+  "scripts": {
+    "setup": "ts-node setup-demo.ts",
+    "upload": "ts-node upload-and-tag.ts",
+    "dev": "ts-node setup-demo.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/sqlite3": "^3.1.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "optionalDependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
