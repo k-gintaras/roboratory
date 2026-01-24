@@ -3,7 +3,8 @@ module.exports = {
     '<rootDir>/packages/*',
     '<rootDir>/apps/*',
     '<rootDir>/experiments/*',
-    '<rootDir>/python/*'
+    '<rootDir>/python/*',
+    '<rootDir>/scripts'
   ],
   testPathIgnorePatterns: ['/node_modules/', '/dist/']
 }

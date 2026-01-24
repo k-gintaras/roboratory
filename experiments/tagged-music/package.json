@@ -8,6 +8,6 @@
     "upload": "ts-node upload-and-tag.ts",
     "dev": "ts-node setup-demo.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   }
 }

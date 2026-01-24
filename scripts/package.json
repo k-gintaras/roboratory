@@ -1,0 +1,10 @@
+{
+  "name": "roboratory-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc -p ."
+  }
+}
