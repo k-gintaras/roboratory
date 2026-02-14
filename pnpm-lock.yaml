@@ -20,16 +20,25 @@ importers:
       firebase-admin:
         specifier: ^12.0.0
         version: 12.7.0(encoding@0.1.13)
+      pg:
+        specifier: ^8.0.0
+        version: 8.16.3
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
     devDependencies:
+      '@jest/globals':
+        specifier: ^29.0.0
+        version: 29.7.0
       '@types/jest':
         specifier: ^29.0.0
         version: 29.5.14
       '@types/node':
         specifier: ^20.0.0
         version: 20.19.28
+      '@types/pg':
+        specifier: ^8.0.0
+        version: 8.16.0
       '@types/sqlite3':
         specifier: ^3.1.8
         version: 3.1.11
@@ -675,6 +684,9 @@ packages:
 
   '@types/node@22.19.7':
     resolution: {integrity: sha512-MciR4AKGHWl7xwxkBa6xUGxQJ4VBOmPTF7sL+iGzuahOFaO0jHCsuEfS80pan1ef4gWId1oWOweIhrDEYLuaOw==}
+
+  '@types/pg@8.16.0':
+    resolution: {integrity: sha512-RmhMd/wD+CF8Dfo+cVIy3RR5cl8CyfXQ0tGgW6XBL8L4LM/UTEbNXYRbLwU6w+CgrKBNbrQWt4FUtTfaU5jSYQ==}
 
   '@types/request@2.48.13':
     resolution: {integrity: sha512-FGJ6udDNUCjd19pp0Q3iTiDkwhYup7J8hpMW9c4k53NrccQFFWKRho6hvtPPEhnXWKvukfwAlB6DbDz4yhH5Gg==}
@@ -3234,6 +3246,12 @@ snapshots:
   '@types/node@22.19.7':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/pg@8.16.0':
+    dependencies:
+      '@types/node': 20.19.28
+      pg-protocol: 1.10.3
+      pg-types: 2.2.0
 
   '@types/request@2.48.13':
     dependencies:

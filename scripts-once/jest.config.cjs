@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'scripts',
+  displayName: 'scripts-once',
   testEnvironment: 'node',
   roots: ['<rootDir>'],
   testMatch: ['**/tests/**/*.test.ts'],

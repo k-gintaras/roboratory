@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "..",
+    "types": ["jest", "@jest/globals", "node"],
+    "skipLibCheck": true
+  },
+  "include": ["./", "../services-reuse/", "./scripts-once/setup-tagging-db.ts","./scripts-once/music-tag-importer.ts"],
+  "exclude": ["node_modules", "dist"]
+}

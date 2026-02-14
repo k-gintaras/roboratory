@@ -1,26 +1,13 @@
-# Roboratory Lab
+# Roboratory
 
-This repository is a lab of experiments and small projects integrating various platforms and APIs.
+A monorepo of experiments, shared packages, and apps for robotics and AI.
 
-Top-level folders (workspaces):
+## Available Functionality
 
-- `api-node` — Node API experiments
-- `angular-web` — Angular web experiments
-- `discord-bot` — Discord bot experiments
-- `chrome-addon` — Chrome extension experiments
-- `wow-addon` — World of Warcraft addon experiments
-- `vscode-extension` — VS Code extension experiments
-- `postgres` — Postgres scripts and examples
-- `supabase` — Supabase examples
-- `other-apis` — Misc API experiments
+| Functionality | File | Function | Parameters | Returns |
+|---|---|---|---|---|
+| Call AI prompt endpoint | `scripts/ai-api-service.ts` | `callPrompt()` | `PromptRequest` | `PromptResponse` |
+| Call AI conversation endpoint | `scripts/ai-api-service.ts` | `callConversation()` | `ConversationRequest` | `ConversationResponse` |
+| PostgreSQL admin and CRUD | `services-reuse/postgres-service.ts` | `PostgresService` methods: `listDatabases`, `createDatabase`, `dropDatabase`, `createTable`, `insert`, `select`, `update`, `delete`, `close` | See method docs | Varies (Promise, array, void) |
 
-Use `npm run bootstrap` to install dependencies at the root.
-
-Keep this file up to date when adding or removing experiments/apps:
-- Add a short bullet under **Recent additions** describing the new workspace and date.
-
-See each folder's README for specific setup notes.
-
-**Recent additions**
-- 2026-01-11: Added guidance files `todo.md`, `lessons_learned.md`, `note.md` (agent workflow)
 

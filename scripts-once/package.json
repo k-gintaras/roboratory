@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:api": "ts-node tests/test-real-api.ts",
     "build": "tsc -p ."
   }
 }

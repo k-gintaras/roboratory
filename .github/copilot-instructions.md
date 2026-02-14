@@ -30,6 +30,7 @@ Purpose: concise, actionable pointers so AI coding agents become productive quic
 
 - **Root README & metadata**:
   - Keep the root `README.md` updated when adding/removing experiments or apps. Add a short bullet to the `Recent additions` section (file `README.md`).
+  - **Important**: When creating a new reusable service (not just a test or experiment), add it to the **Functionality table** in `README.md` with: Functionality name, file path, function name, parameters, and return type. This keeps the project's capabilities visible at a glance.
   - Add any troubleshooting or environment notes to `MONOREPO_SETUP.md` and cross-link from the root `README.md`.
 
 - **Files to inspect for examples**:

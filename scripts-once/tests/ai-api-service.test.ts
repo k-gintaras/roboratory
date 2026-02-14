@@ -1,23 +1,9 @@
-import { AiApiService, PromptRequest, ConversationRequest } from '../ai-api-service';
-import * as admin from 'firebase-admin';
-import * as fs from 'fs';
-import * as path from 'path';
+import { config } from 'dotenv';
+import { AiApiService, ConversationRequest, PromptRequest } from '../../services-reuse/ai-api-service';
+import { beforeEach, describe, it, expect } from '@jest/globals';
 
-// Mock Firebase Admin SDK
-jest.mock('firebase-admin', () => ({
-  initializeApp: jest.fn(),
-  credential: {
-    cert: jest.fn(),
-  },
-  auth: jest.fn(() => ({
-    createCustomToken: jest.fn().mockResolvedValue('mock-token-123'),
-  })),
-}));
-
-jest.mock('fs');
-jest.mock('dotenv', () => ({
-  config: jest.fn(),
-}));
+// Load environment variables from .env
+config();
 
 describe('AiApiService Integration Tests', () => {
   let service: AiApiService;
@@ -26,77 +12,21 @@ describe('AiApiService Integration Tests', () => {
     // Reset all mocks before each test
     jest.clearAllMocks();
 
-    // Set up environment variable
-    process.env.GOOGLE_APPLICATION_CREDENTIALS = './ai-api-firebase-key.json';
-
-    // Mock file system
-    (fs.existsSync as jest.Mock).mockReturnValue(true);
-    (fs.readFileSync as jest.Mock).mockReturnValue(
-      JSON.stringify({
-        type: 'service_account',
-        project_id: 'test-project',
-        private_key_id: 'test-key-id',
-        private_key: '-----BEGIN PRIVATE KEY-----\ntest\n-----END PRIVATE KEY-----',
-        client_email: 'firebase-adminsdk@test-project.iam.gserviceaccount.com',
-      })
-    );
-
     service = new AiApiService();
   });
 
-  describe('initialize()', () => {
-    it('should initialize Firebase Admin SDK with service account key', async () => {
-      await service.initialize();
-
-      expect(fs.readFileSync).toHaveBeenCalledWith(
-        expect.stringContaining('ai-api-firebase-key.json'),
-        'utf-8'
-      );
-      expect(admin.initializeApp).toHaveBeenCalled();
-    });
-
-    it('should throw error if GOOGLE_APPLICATION_CREDENTIALS is not set', async () => {
-      delete process.env.GOOGLE_APPLICATION_CREDENTIALS;
-      const newService = new AiApiService();
-
-      await expect(newService.initialize()).rejects.toThrow(
-        'GOOGLE_APPLICATION_CREDENTIALS environment variable is not set'
-      );
-    });
-
-    it('should throw error if credentials file does not exist', async () => {
-      (fs.existsSync as jest.Mock).mockReturnValue(false);
-      const newService = new AiApiService();
-
-      await expect(newService.initialize()).rejects.toThrow(
-        'Firebase service account key file not found'
-      );
-    });
-
-    it('should not reinitialize if already initialized', async () => {
-      await service.initialize();
-      const initCallCount = (admin.initializeApp as jest.Mock).mock.calls.length;
-
-      await service.initialize();
-
-      expect((admin.initializeApp as jest.Mock).mock.calls.length).toBe(initCallCount);
-    });
-  });
-
   describe('callPrompt()', () => {
-    beforeEach(async () => {
-      await service.initialize();
-    });
-
     it('should call the /prompt endpoint with correct headers and body', async () => {
       const mockFetch = jest.fn().mockResolvedValue({
         ok: true,
+        status: 200,
+        statusText: 'OK',
         json: jest.fn().mockResolvedValue({ answer: 'Paris is the capital of France.' }),
       });
       global.fetch = mockFetch;
 
       const request: PromptRequest = {
-        id: 'assistant-123',
+        id: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         prompt: 'What is the capital of France?',
         extraInstruction: 'Be concise.',
       };
@@ -104,11 +34,10 @@ describe('AiApiService Integration Tests', () => {
       const response = await service.callPrompt(request);
 
       expect(mockFetch).toHaveBeenCalledWith(
-        'http://192.168.4.41:3001/prompt',
+        'http://localhost:3001/prompt',
         expect.objectContaining({
           method: 'POST',
           headers: {
-            Authorization: 'Bearer mock-token-123',
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(request),
@@ -128,7 +57,7 @@ describe('AiApiService Integration Tests', () => {
       global.fetch = mockFetch;
 
       const request: PromptRequest = {
-        id: 'assistant-123',
+        id: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         prompt: 'What is the capital of France?',
       };
 
@@ -147,7 +76,7 @@ describe('AiApiService Integration Tests', () => {
       global.fetch = mockFetch;
 
       const request: PromptRequest = {
-        id: 'assistant-123',
+        id: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         prompt: 'What is the capital of France?',
       };
 
@@ -158,15 +87,13 @@ describe('AiApiService Integration Tests', () => {
   });
 
   describe('callConversation()', () => {
-    beforeEach(async () => {
-      await service.initialize();
-    });
-
     it('should call the /conversation endpoint with all fields', async () => {
       const mockFetch = jest.fn().mockResolvedValue({
         ok: true,
+        status: 200,
+        statusText: 'OK',
         json: jest.fn().mockResolvedValue({
-          assistantId: 'assistant-123',
+          assistantId: '097ab4e4-4f39-4a98-95d2-9362531d3511',
           userId: 'user-456',
           chatId: 'chat-789',
           sessionId: 'session-012',
@@ -177,7 +104,7 @@ describe('AiApiService Integration Tests', () => {
       global.fetch = mockFetch;
 
       const request: ConversationRequest = {
-        assistantId: 'assistant-123',
+        assistantId: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         userId: 'user-456',
         chatId: 'chat-789',
         sessionId: 'session-012',
@@ -187,11 +114,10 @@ describe('AiApiService Integration Tests', () => {
       const response = await service.callConversation(request);
 
       expect(mockFetch).toHaveBeenCalledWith(
-        'http://192.168.4.41:3001/conversation',
+        'http://localhost:3001/conversation',
         expect.objectContaining({
           method: 'POST',
           headers: {
-            Authorization: 'Bearer mock-token-123',
             'Content-Type': 'application/json',
           },
         })
@@ -203,8 +129,10 @@ describe('AiApiService Integration Tests', () => {
     it('should handle null optional fields correctly', async () => {
       const mockFetch = jest.fn().mockResolvedValue({
         ok: true,
+        status: 200,
+        statusText: 'OK',
         json: jest.fn().mockResolvedValue({
-          assistantId: 'assistant-123',
+          assistantId: '097ab4e4-4f39-4a98-95d2-9362531d3511',
           userId: null,
           chatId: 'chat-789',
           sessionId: 'session-012',
@@ -215,18 +143,18 @@ describe('AiApiService Integration Tests', () => {
       global.fetch = mockFetch;
 
       const request: ConversationRequest = {
-        assistantId: 'assistant-123',
+        assistantId: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         prompt: 'Test prompt',
       };
 
       const response = await service.callConversation(request);
 
-      // Verify null fields are passed
+      // Verify empty string fields are passed
       const callArgs = mockFetch.mock.calls[0][1];
       const body = JSON.parse(callArgs.body);
-      expect(body.userId).toBeNull();
-      expect(body.chatId).toBeNull();
-      expect(body.sessionId).toBeNull();
+      expect(body.userId).toBe('');
+      expect(body.chatId).toBe('');
+      expect(body.sessionId).toBe('');
 
       expect(response.answer).toBe('Response');
     });
@@ -242,7 +170,7 @@ describe('AiApiService Integration Tests', () => {
       global.fetch = mockFetch;
 
       const request: ConversationRequest = {
-        assistantId: 'assistant-123',
+        assistantId: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         prompt: 'Test prompt',
       };
 
@@ -256,7 +184,6 @@ describe('AiApiService Integration Tests', () => {
     it('should use custom API URL when provided', async () => {
       const customUrl = 'http://localhost:3000';
       const customService = new AiApiService(customUrl);
-      await customService.initialize();
 
       const mockFetch = jest.fn().mockResolvedValue({
         ok: true,
@@ -265,7 +192,7 @@ describe('AiApiService Integration Tests', () => {
       global.fetch = mockFetch;
 
       const request: PromptRequest = {
-        id: 'test',
+        id: '097ab4e4-4f39-4a98-95d2-9362531d3511',
         prompt: 'Test prompt',
       };
 

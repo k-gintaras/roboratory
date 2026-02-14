@@ -3,6 +3,8 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": ".",
+    "types": ["jest", "@jest/globals", "node"],
+    "skipLibCheck": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]
