@@ -1,0 +1,1092 @@
+{
+  "name": "Cool House",
+  "description": "Tight, driving house with cool vibes",
+  "count": 18,
+  "songs": [
+    {
+      "title": "This Day",
+      "artist": "Antony Pl",
+      "album": "Antony Pl",
+      "filePath": "D:\\Music\\All\\Antony Pl - This Day.mp3",
+      "bpm": 125.0,
+      "initialKey": "Em",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm"
+        ],
+        "attitude": [
+          "neutral"
+        ],
+        "style": [
+          "cool"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "balanced"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "male"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "I Want You",
+      "artist": "Carl Cox",
+      "album": "Carl Cox",
+      "filePath": "D:\\Music\\All\\Carl Cox - I Want You (Deadmau5).mp3",
+      "bpm": 128.0,
+      "initialKey": "Em",
+      "tags": {
+        "genre": [
+          "electronic",
+          "techno",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm"
+        ],
+        "attitude": [
+          "neutral"
+        ],
+        "style": [
+          "cool",
+          "timeless"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Only One",
+      "artist": "Chris Lake",
+      "album": "The Underground 2009",
+      "filePath": "D:\\Music\\All\\Chris Lake - Only One.mp3",
+      "bpm": 127.0,
+      "initialKey": "C#m",
+      "tags": {
+        "genre": [
+          "electronic",
+          "unknown",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "dance-melody",
+          "melodic"
+        ],
+        "harmony": [],
+        "repetition": "unknown",
+        "progression": "progressive",
+        "mood": [
+          "tense",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "timeless"
+        ],
+        "texture": [
+          "electronic",
+          "strong"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Arguru",
+      "artist": "Deadmau5",
+      "album": "Deadmau5",
+      "filePath": "D:\\Music\\All\\Deadmau5 - Arguru.mp3",
+      "bpm": 128.0,
+      "initialKey": "Em",
+      "tags": {
+        "genre": [
+          "jazz",
+          "house",
+          "techno",
+          "electronic"
+        ],
+        "subgenre": [
+          "industrial"
+        ],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club"
+        ],
+        "melody": [
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "modern"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "industrial"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "modern"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Hybrid",
+      "artist": "Deadmau5",
+      "album": "Deadmau5",
+      "filePath": "D:\\Music\\All\\Deadmau5 - Hybrid.mp3",
+      "bpm": 127.0,
+      "initialKey": "Bm",
+      "tags": {
+        "genre": [
+          "jazz",
+          "house",
+          "techno",
+          "electronic"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm"
+        ],
+        "attitude": [
+          "cute"
+        ],
+        "style": [
+          "cool",
+          "modern"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient",
+          "balanced"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "modern"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "I Want You",
+      "artist": "Deadmau5",
+      "album": "Deadmau5",
+      "filePath": "D:\\Music\\All\\Deadmau5 - I Want You.mp3",
+      "bpm": 128.0,
+      "initialKey": "Em",
+      "tags": {
+        "genre": [
+          "jazz",
+          "house",
+          "techno",
+          "electronic"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club"
+        ],
+        "melody": [
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "tense",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "timeless",
+          "modern"
+        ],
+        "texture": [
+          "electronic",
+          "strong"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "timeless",
+          "modern"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Alone With You",
+      "artist": "Deadmou5",
+      "album": "Deadmou5",
+      "filePath": "D:\\Music\\All\\Deadmou5 - Alone With You.mp3",
+      "bpm": 128.0,
+      "initialKey": "Ebm",
+      "tags": {
+        "genre": [
+          "jazz",
+          "house",
+          "techno",
+          "electronic"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm"
+        ],
+        "attitude": [
+          "cute"
+        ],
+        "style": [
+          "cool",
+          "timeless",
+          "modern"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient",
+          "balanced"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "timeless",
+          "modern"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Ribcage",
+      "artist": "Dubfire",
+      "album": "Tecktonik",
+      "filePath": "D:\\Music\\All\\Dubfire - Ribcage.mp3",
+      "bpm": 130.0,
+      "initialKey": "Gm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "tense",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "timeless",
+          "modern"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "timeless",
+          "modern"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Dios",
+      "artist": "Dubfire",
+      "album": "Dubfire",
+      "filePath": "D:\\Music\\All\\Dubfire - Dios (Oliver Huntemann).mp3",
+      "bpm": 126.0,
+      "initialKey": "Eb",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "tense",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "timeless"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Moon Rocks",
+      "artist": "Enrico Sangiuliano",
+      "album": "Enrico Sangiuliano",
+      "filePath": "D:\\Music\\All\\Enrico Sangiuliano - Moon Rocks.mp3",
+      "bpm": 125.0,
+      "initialKey": "Ebm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Imagination",
+      "artist": "Gorgon City",
+      "album": "Gorgon City",
+      "filePath": "D:\\Music\\All\\Gorgon City - Imagination (Katy Menditta Weiss).mp3",
+      "bpm": 122.0,
+      "initialKey": "Cm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club",
+          "funky"
+        ],
+        "melody": [
+          "dance-melody"
+        ],
+        "harmony": [],
+        "repetition": "unknown",
+        "progression": "progressive",
+        "mood": [
+          "tense",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "funky",
+          "timeless"
+        ],
+        "texture": [
+          "electronic",
+          "strong"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "high",
+          "loud"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Nalas Groove",
+      "artist": "Louie Corrales",
+      "album": "Louie Corrales",
+      "filePath": "D:\\Music\\All\\Louie Corrales - Nalas Groove (Elias R).mp3",
+      "bpm": 125.0,
+      "initialKey": "Fm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm"
+        ],
+        "attitude": [
+          "neutral"
+        ],
+        "style": [
+          "cool"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "balanced"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Butterfly Caught",
+      "artist": "Massive Attack",
+      "album": "Butterfly Caught EP",
+      "filePath": "D:\\Music\\All\\Massive Attack - Butterfly Caught (Octave One).mp3",
+      "bpm": 130.0,
+      "initialKey": "Fm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "unknown",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "strong-melody",
+          "melodic"
+        ],
+        "harmony": [],
+        "repetition": "unknown",
+        "progression": "progressive",
+        "mood": [
+          "calm",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "modern"
+        ],
+        "texture": [
+          "electronic",
+          "strong"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "male"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "modern"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Release Me",
+      "artist": "Memoryman",
+      "album": "Memoryman",
+      "filePath": "D:\\Music\\All\\Memoryman - Release Me (Rogue D).mp3",
+      "bpm": 124.0,
+      "initialKey": "Em",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "strong-melody",
+          "melodic"
+        ],
+        "harmony": [],
+        "repetition": "unknown",
+        "progression": "progressive",
+        "mood": [
+          "positive"
+        ],
+        "attitude": [
+          "cute"
+        ],
+        "style": [
+          "cool"
+        ],
+        "texture": [
+          "electronic",
+          "strong"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Plumbicon",
+      "artist": "Monolake",
+      "album": "Monolake",
+      "filePath": "D:\\Music\\All\\Monolake - Plumbicon.mp3",
+      "bpm": 128.0,
+      "initialKey": "Am",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "calm",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "timeless"
+        ],
+        "texture": [
+          "electronic",
+          "strong",
+          "ambient"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Elbestrasse 36 Frankfurt 2012",
+      "artist": "Oliver Schories",
+      "album": "Oliver Schories",
+      "filePath": "D:\\Music\\All\\Oliver Schories - Elbestrasse 36 Frankfurt 2012 (Kellerwald).mp3",
+      "bpm": null,
+      "initialKey": "Ebm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "techno",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "unknown",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club",
+          "funky"
+        ],
+        "melody": [
+          "dance-melody"
+        ],
+        "harmony": [],
+        "repetition": "unknown",
+        "progression": "progressive",
+        "mood": [
+          "positive"
+        ],
+        "attitude": [
+          "cute"
+        ],
+        "style": [
+          "cool",
+          "funky"
+        ],
+        "texture": [
+          "electronic",
+          "gentle",
+          "strong",
+          "balanced"
+        ],
+        "weight": "light",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "mixed",
+          "male",
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": [
+          "long",
+          "tofix"
+        ]
+      }
+    },
+    {
+      "title": "No Gravity",
+      "artist": "Paronator",
+      "album": "Paronator",
+      "filePath": "D:\\Music\\All\\Paronator - No Gravity (Tom Middleton).mp3",
+      "bpm": 126.0,
+      "initialKey": "F#m",
+      "tags": {
+        "genre": [
+          "electronic",
+          "techno",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "driving",
+          "club"
+        ],
+        "melody": [
+          "atmospheric",
+          "minimal"
+        ],
+        "harmony": [],
+        "repetition": "loop-heavy",
+        "progression": "progressive",
+        "mood": [
+          "uplifting",
+          "positive",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool",
+          "timeless"
+        ],
+        "texture": [
+          "electronic",
+          "gentle",
+          "ambient",
+          "balanced"
+        ],
+        "weight": "light",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "unknown",
+        "vocalSource": [],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new",
+          "timeless"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    },
+    {
+      "title": "Fearing Love",
+      "artist": "Serge Devant and Damiano",
+      "album": "Serge Devant and Damiano",
+      "filePath": "D:\\Music\\All\\Serge Devant and Damiano - Fearing Love (Camille Safiya).mp3",
+      "bpm": 123.0,
+      "initialKey": "Fm",
+      "tags": {
+        "genre": [
+          "electronic",
+          "house"
+        ],
+        "subgenre": [],
+        "pace": "fast",
+        "energy": "high",
+        "groove": [
+          "rhythmic",
+          "club"
+        ],
+        "melody": [
+          "dance-melody"
+        ],
+        "harmony": [],
+        "repetition": "unknown",
+        "progression": "unknown",
+        "mood": [
+          "positive",
+          "serious"
+        ],
+        "attitude": [
+          "serious"
+        ],
+        "style": [
+          "cool"
+        ],
+        "texture": [
+          "electronic",
+          "strong"
+        ],
+        "weight": "heavy",
+        "soundProfile": [
+          "loud",
+          "deep"
+        ],
+        "vocalPresence": "vocal",
+        "vocalSource": [
+          "female"
+        ],
+        "vocalStyle": [],
+        "instrumentation": [],
+        "eraFeel": [
+          "new"
+        ],
+        "mixFit": [],
+        "flags": []
+      }
+    }
+  ]
+}

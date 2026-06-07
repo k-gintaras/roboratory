@@ -1,0 +1,12 @@
+Rating,love,favorite,maybe,crap
+Genre,house,dnb,techno,trance,ambient,pop,rock,hiphop,classical,jazz,latin,experimental,other
+Subgenre,progressive-house,idm,industrial,electro,soul-rnb,rap,remix,noise,newage
+Pace,slow,mid,fast
+Energy,low,medium,high,peak
+Groove,tight,driving,flowing,bouncy,funky,club,loose
+Melody,strong,melodic,minimal,atmospheric,chaotic
+Structure,loop-heavy,balanced,varied,progressive,static
+Mood,positive,uplifting,calm,sad,tense,dark,dreamy,serious
+Style,cool,funky,classy,beautiful,epic,cute,naughty,oldschool,modern,timeless,weird,rough
+Texture,soft,balanced,strong,heavy,industrial,ambient,electronic,acoustic,smooth
+Vocal,instrumental,male,female,mixed,chorus,robotic,chopped,spoken,sampled,ambient-voice

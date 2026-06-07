@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python convert_music_tags.py:*)",
+      "Bash(python inspect_converted_music.py:*)",
+      "Bash(python create_playlist.py:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

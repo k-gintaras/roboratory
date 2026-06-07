@@ -1,0 +1,6 @@
+.env
+client_secret*.json
+token*.json
+shuffle-history*.json
+node_modules/
+npm-debug.log*
