@@ -1,0 +1,21 @@
+{
+  "name": "culture-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RSS-based trend radar for memes, culture, medicine, tech, and politics.",
+  "scripts": {
+    "digest": "node src/cli.js digest",
+    "memes": "node src/cli.js memes",
+    "research": "node src/cli.js research",
+    "chan": "node src/cli.js chan",
+    "benchmark": "node src/cli.js benchmark"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
